@@ -6,7 +6,7 @@
 /*   By: esaleh <esaleh@student.42berlin.de>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/23 10:56:12 by esaleh            #+#    #+#             */
-/*   Updated: 2025/05/26 13:50:55 by esaleh           ###   ########.fr       */
+/*   Updated: 2025/05/26 15:07:01 by esaleh           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,5 +26,12 @@ void	*ft_memchr(const void *s, int c, size_t n)
 		s++;
 		i++;
 	}
+	return (0);
+}
+
+int	main(void)
+{
+	chat str[] = "Hello how are you doing?";
+	ft
 	return (0);
 }
