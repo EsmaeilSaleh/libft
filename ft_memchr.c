@@ -6,7 +6,7 @@
 /*   By: esaleh <esaleh@student.42berlin.de>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/23 10:56:12 by esaleh            #+#    #+#             */
-/*   Updated: 2025/05/26 16:40:00 by esaleh           ###   ########.fr       */
+/*   Updated: 2025/05/26 16:40:16 by esaleh           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	{
 		if (*(unsigned char *)s == tmp)
 		{
-			return ((signed char *)s);
+			return ((char *)s);
 		}
 		s++;
 		i++;
