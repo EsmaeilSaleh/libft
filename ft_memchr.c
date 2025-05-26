@@ -6,7 +6,7 @@
 /*   By: esaleh <esaleh@student.42berlin.de>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/23 10:56:12 by esaleh            #+#    #+#             */
-/*   Updated: 2025/05/26 16:00:57 by esaleh           ###   ########.fr       */
+/*   Updated: 2025/05/26 16:07:45 by esaleh           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,11 +29,11 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	}
 	return (0);
 }
-/*
 int	main(void)
 {
 	char str[] = "Hello how are you doing?";
-	unsigned char *c = ft_memchr(str, '?', 29*sizeof(char));
+	int tab[7] = {-49, 49, 1, -1, 0, -2, 2};
+	unsigned char *c = ft_memchr(tab, -1, 7);
 	if (*c)
 	{
 		printf("%s\n", "Congratulation!");
@@ -44,4 +44,3 @@ int	main(void)
 		printf("%s\n", "No, We don't have it!'");
 	return (0);
 }
-*/
