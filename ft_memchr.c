@@ -6,7 +6,7 @@
 /*   By: esaleh <esaleh@student.42berlin.de>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/23 10:56:12 by esaleh            #+#    #+#             */
-/*   Updated: 2025/05/26 17:40:50 by esaleh           ###   ########.fr       */
+/*   Updated: 2025/05/26 17:42:48 by esaleh           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,7 @@ int	main(void)
 	int tab[7] = {-49, 49, 1, -1, 0, -2, 2};
 	printf("%s\n", "The address in the array:");
 	printf("%p\n", &tab[0]);
-	void c = ft_memchr(tab, -49, 7*sizeof(int));
+	void *c = ft_memchr(tab, -49, 7*sizeof(int));
 	if (*(unsigned char *)c)
 	{
 		printf("%s\n", "Congratulation!");
