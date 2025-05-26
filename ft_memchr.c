@@ -6,7 +6,7 @@
 /*   By: esaleh <esaleh@student.42berlin.de>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/23 10:56:12 by esaleh            #+#    #+#             */
-/*   Updated: 2025/05/26 16:16:28 by esaleh           ###   ########.fr       */
+/*   Updated: 2025/05/26 16:17:17 by esaleh           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ void	*ft_memchr(const void *s, int c, size_t n)
 		s++;
 		i++;
 	}
-		printf("%d\n", (int *)s);
+		printf("%d\n", (int)s);
 	return (0);
 }
 int	main(void)
