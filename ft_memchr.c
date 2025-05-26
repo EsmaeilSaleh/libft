@@ -6,11 +6,12 @@
 /*   By: esaleh <esaleh@student.42berlin.de>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/23 10:56:12 by esaleh            #+#    #+#             */
-/*   Updated: 2025/05/26 15:07:01 by esaleh           ###   ########.fr       */
+/*   Updated: 2025/05/26 15:30:52 by esaleh           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <string.h>
+#include <stdio.h>
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {
@@ -32,6 +33,11 @@ void	*ft_memchr(const void *s, int c, size_t n)
 int	main(void)
 {
 	chat str[] = "Hello how are you doing?";
-	ft
+	if (ft_memchr(str, 'i', sizeof(char)))
+	{
+		printf("%s\n", "We have the char");
+	}
+	else
+		printf("%s\n", "No, We don't have it!'");
 	return (0);
 }
