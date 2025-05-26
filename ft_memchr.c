@@ -6,7 +6,7 @@
 /*   By: esaleh <esaleh@student.42berlin.de>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/23 10:56:12 by esaleh            #+#    #+#             */
-/*   Updated: 2025/05/26 17:11:34 by esaleh           ###   ########.fr       */
+/*   Updated: 2025/05/26 17:30:42 by esaleh           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,6 +33,7 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	}
 	return (0);
 }
+
 int	main(void)
 {
 	char str[] = "Hello how are you doing?";
@@ -43,7 +44,7 @@ int	main(void)
 		printf("%s\n", "Congratulation!");
 		printf("%s\n", "We have the char!");
 		printf("%s\n", "The char is:");
-		printf("%d\n",*(int *)c % 256);
+		printf("%d\n",*(int *)c);
 	}
 	else
 		printf("%s\n", "No, We don't have it!'");
