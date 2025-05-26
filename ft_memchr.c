@@ -6,7 +6,7 @@
 /*   By: esaleh <esaleh@student.42berlin.de>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/23 10:56:12 by esaleh            #+#    #+#             */
-/*   Updated: 2025/05/26 15:56:11 by esaleh           ###   ########.fr       */
+/*   Updated: 2025/05/26 16:00:57 by esaleh           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	}
 	return (0);
 }
-
+/*
 int	main(void)
 {
 	char str[] = "Hello how are you doing?";
@@ -44,3 +44,4 @@ int	main(void)
 		printf("%s\n", "No, We don't have it!'");
 	return (0);
 }
+*/
