@@ -6,7 +6,7 @@
 /*   By: esaleh <esaleh@student.42berlin.de>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/23 10:56:12 by esaleh            #+#    #+#             */
-/*   Updated: 2025/05/26 15:50:45 by esaleh           ###   ########.fr       */
+/*   Updated: 2025/05/26 15:52:30 by esaleh           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,6 +37,7 @@ int	main(void)
 	{
 		printf("%s\n", "Congratulation!");
 		printf("%s\n", "We have the char!");
+		printf("%c\n", ft_memchr(str, '?', 29*sizeof(char)));
 	}
 	else
 		printf("%s\n", "No, We don't have it!'");
