@@ -6,7 +6,7 @@
 /*   By: esaleh <esaleh@student.42berlin.de>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/23 10:56:12 by esaleh            #+#    #+#             */
-/*   Updated: 2025/05/26 16:40:48 by esaleh           ###   ########.fr       */
+/*   Updated: 2025/05/26 16:41:12 by esaleh           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,7 +44,7 @@ int	main(void)
 		printf("%s\n", "We have the char!");
 		//printf("%c\n", *c);
 		printf("%s\n", "The char is:");
-		printf("%d\n",*(signed int *)c);
+		printf("%d\n",*(int *)c % 256);
 	}
 	else
 		printf("%s\n", "No, We don't have it!'");
