@@ -6,7 +6,7 @@
 /*   By: esaleh <esaleh@student.42berlin.de>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/23 10:56:12 by esaleh            #+#    #+#             */
-/*   Updated: 2025/05/26 16:30:23 by esaleh           ###   ########.fr       */
+/*   Updated: 2025/05/26 16:30:43 by esaleh           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,6 +45,7 @@ int	main(void)
 		printf("%s\n", "Congratulation!");
 		printf("%s\n", "We have the char!");
 		//printf("%c\n", *c);
+		printf("%s\n", "The char is:");
 		printf("%d\n",*(int *)c);
 	}
 	else
