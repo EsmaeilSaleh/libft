@@ -6,7 +6,7 @@
 /*   By: esaleh <esaleh@student.42berlin.de>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/23 10:56:12 by esaleh            #+#    #+#             */
-/*   Updated: 2025/05/26 15:30:52 by esaleh           ###   ########.fr       */
+/*   Updated: 2025/05/26 15:31:12 by esaleh           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ void	*ft_memchr(const void *s, int c, size_t n)
 
 int	main(void)
 {
-	chat str[] = "Hello how are you doing?";
+	char str[] = "Hello how are you doing?";
 	if (ft_memchr(str, 'i', sizeof(char)))
 	{
 		printf("%s\n", "We have the char");
