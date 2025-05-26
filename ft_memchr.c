@@ -6,7 +6,7 @@
 /*   By: esaleh <esaleh@student.42berlin.de>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/23 10:56:12 by esaleh            #+#    #+#             */
-/*   Updated: 2025/05/26 17:33:46 by esaleh           ###   ########.fr       */
+/*   Updated: 2025/05/26 17:34:13 by esaleh           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,7 @@ int	main(void)
 	char str[] = "Hello how are you doing?";
 	int tab[7] = {-49, 49, 1, -1, 0, -2, 2};
 	void *c = ft_memchr(tab, -49, 7*sizeof(int));
-	if (*c)
+	if (*(unsigned char)c)
 	{
 		printf("%s\n", "Congratulation!");
 		printf("%s\n", "We have found your char!");
