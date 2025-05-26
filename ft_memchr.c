@@ -6,7 +6,7 @@
 /*   By: esaleh <esaleh@student.42berlin.de>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/23 10:56:12 by esaleh            #+#    #+#             */
-/*   Updated: 2025/05/26 16:31:44 by esaleh           ###   ########.fr       */
+/*   Updated: 2025/05/26 16:31:53 by esaleh           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,10 +26,8 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	{
 		if (*(unsigned char *)s == tmp)
 		{
-			printf("%s\n", "Congratulation!");
 			return ((unsigned char *)s);
 		}
-		printf("%d\n",*(int *)s);
 		s++;
 		i++;
 	}
