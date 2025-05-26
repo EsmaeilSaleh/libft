@@ -6,7 +6,7 @@
 /*   By: esaleh <esaleh@student.42berlin.de>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/23 10:56:12 by esaleh            #+#    #+#             */
-/*   Updated: 2025/05/26 17:37:19 by esaleh           ###   ########.fr       */
+/*   Updated: 2025/05/26 17:37:37 by esaleh           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,7 +47,7 @@ int	main(void)
 		printf("%s\n", "The char is:");
 		printf("%d\n",*(int *)c);
 		printf("%s\n", "The address of your char is:");
-		printf("%d\n",*c);
+		printf("%d\n",*(int *)c);
 	}
 	else
 		printf("%s\n", "No, We don't have it!'");
