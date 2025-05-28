@@ -6,9 +6,11 @@
 /*   By: esaleh <esaleh@student.42berlin.de>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/23 00:27:35 by esaleh            #+#    #+#             */
-/*   Updated: 2025/05/28 13:42:25 by esaleh           ###   ########.fr       */
+/*   Updated: 2025/05/28 13:43:10 by esaleh           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+int	ft_strlen(char *str);
 
 char	*ft_strchr(const char *s, int c)
 {
