@@ -6,7 +6,7 @@
 /*   By: esaleh <esaleh@student.42berlin.de>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/23 02:23:32 by esaleh            #+#    #+#             */
-/*   Updated: 2025/05/23 03:07:02 by esaleh           ###   ########.fr       */
+/*   Updated: 2025/05/28 12:44:43 by esaleh           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,6 +34,7 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	return (0);
 }
 
+/*
 #include <stdio.h>
 
 int	main(void)
@@ -47,3 +48,4 @@ int	main(void)
 
 	return (0);
 }
+*/
