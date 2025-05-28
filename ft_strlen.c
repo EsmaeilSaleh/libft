@@ -6,11 +6,11 @@
 /*   By: esaleh <esaleh@student.42berlin.de>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/22 13:53:33 by esaleh            #+#    #+#             */
-/*   Updated: 2025/05/22 13:58:38 by esaleh           ###   ########.fr       */
+/*   Updated: 2025/05/28 12:46:21 by esaleh           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_strlen(char *str)
+int	ft_strlen(const char *str)
 {
 	int	i;
 
