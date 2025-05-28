@@ -6,7 +6,7 @@
 /*   By: esaleh <esaleh@student.42berlin.de>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/23 09:36:19 by esaleh            #+#    #+#             */
-/*   Updated: 2025/05/28 15:18:47 by esaleh           ###   ########.fr       */
+/*   Updated: 2025/05/28 15:18:56 by esaleh           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,10 +22,8 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	d = (unsigned char *)dest;
 	s = (const unsigned char *)src;
 	orig_dest = d;
-
 	if (!dest && !src && n > 0)
 		return (NULL);
-
 	if (d > s && d < s + n)
 	{
 		// Copy backwards
