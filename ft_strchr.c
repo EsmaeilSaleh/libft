@@ -6,11 +6,12 @@
 /*   By: esaleh <esaleh@student.42berlin.de>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/23 00:27:35 by esaleh            #+#    #+#             */
-/*   Updated: 2025/05/28 14:21:57 by esaleh           ###   ########.fr       */
+/*   Updated: 2025/05/28 14:24:07 by esaleh           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stddef.h>
+#include <stdio.h>
 
 char	*ft_strchr(const char *s, int c)
 {
@@ -23,4 +24,11 @@ char	*ft_strchr(const char *s, int c)
 	if (*s == '\0' && c == '\0')
 		return ((char *)s);
 	return (NULL);
+}
+
+int	main(void)
+{
+	char str[20] = "hello i love";
+	printf("%p\n", ft_strchr(str, 'i'));
+	return (0);
 }
