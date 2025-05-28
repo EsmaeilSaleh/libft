@@ -6,7 +6,7 @@
 /*   By: esaleh <esaleh@student.42berlin.de>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/22 11:05:13 by esaleh            #+#    #+#             */
-/*   Updated: 2025/05/28 14:06:13 by esaleh           ###   ########.fr       */
+/*   Updated: 2025/05/28 14:07:55 by esaleh           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 # define LIBFT_H
 
 # include <string.h>
-#define NULL 0
+# define NULL 0
 
 void	*ft_memchr(const void *s, int c, size_t n);
 void	*ft_memset(void *s, int c, size_t n);
