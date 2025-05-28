@@ -6,7 +6,7 @@
 /*   By: esaleh <esaleh@student.42berlin.de>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/23 10:56:12 by esaleh            #+#    #+#             */
-/*   Updated: 2025/05/28 14:42:54 by esaleh           ###   ########.fr       */
+/*   Updated: 2025/05/28 14:48:39 by esaleh           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@ void	*ft_memchr(const void *s, int c, size_t n)
 {
 	size_t			i;
 	unsigned char	tmp;
+	const unsigned	ptr;
 
 	tmp = (unsigned char )c;
 	i = 0;
