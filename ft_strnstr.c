@@ -6,14 +6,15 @@
 /*   By: esaleh <esaleh@student.42berlin.de>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/23 02:23:32 by esaleh            #+#    #+#             */
-/*   Updated: 2025/05/28 15:00:23 by esaleh           ###   ########.fr       */
+/*   Updated: 2025/05/28 15:01:04 by esaleh           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include <stddef.h>
 
-char *ft_strnstr(const char *big, const char *little, size_t len)
+char	*ft_strnstr(const char *big, const char *little, size_t len)
 {
-    size_t i, j;
+    size_t	i;
+    size_t	j;
 
     if (*little == '\0')
         return (char *)big;
