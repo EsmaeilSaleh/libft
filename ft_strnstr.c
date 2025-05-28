@@ -6,7 +6,7 @@
 /*   By: esaleh <esaleh@student.42berlin.de>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/23 02:23:32 by esaleh            #+#    #+#             */
-/*   Updated: 2025/05/28 15:03:32 by esaleh           ###   ########.fr       */
+/*   Updated: 2025/05/28 15:04:10 by esaleh           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include <stddef.h>
@@ -17,7 +17,7 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	size_t	j;
 
 	if (*little == '\0')
-		return (char *)big;
+		return ((char *)big);
 
 	for (i = 0; big[i] && i < len; i++)
 	{
@@ -26,10 +26,10 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 		{
 			j++;
 			if (little[j] == '\0')
-				return (char *)(big + i);
+				return ((char *)(big + i));
 		}
 	}
-	return NULL;
+	return (NULL);
 }
 /*
 #include <string.h>
