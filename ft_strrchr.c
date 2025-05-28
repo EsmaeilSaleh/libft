@@ -6,10 +6,27 @@
 /*   By: esaleh <esaleh@student.42berlin.de>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/23 00:48:45 by esaleh            #+#    #+#             */
-/*   Updated: 2025/05/23 02:04:31 by esaleh           ###   ########.fr       */
+/*   Updated: 2025/05/28 15:10:52 by esaleh           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+char	*ft_strrchr(const char *s, int c)
+{
+	char	*tmp;
+
+	tmp = NULL;
+	while (*s)
+	{
+		if (*s == (char)c)
+			tmp = (char *)s;
+		s++;
+	}
+	if ((char)c == '\0')
+		return ((char *)s);
+	return (tmp);
+}
+
+/*
 char	*ft_strrchr(const char *s, int c)
 {
 	char	*tmp;
@@ -29,6 +46,7 @@ char	*ft_strrchr(const char *s, int c)
 		return (tmp);
 	return (0);
 }
+*/
 /*
 #include <stdio.h>
 
