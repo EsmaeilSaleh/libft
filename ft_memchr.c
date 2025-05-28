@@ -6,12 +6,11 @@
 /*   By: esaleh <esaleh@student.42berlin.de>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/23 10:56:12 by esaleh            #+#    #+#             */
-/*   Updated: 2025/05/28 12:31:17 by esaleh           ###   ########.fr       */
+/*   Updated: 2025/05/28 12:48:03 by esaleh           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <string.h>
-#include <stdio.h>
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {
