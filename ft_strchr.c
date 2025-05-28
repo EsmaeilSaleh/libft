@@ -6,7 +6,7 @@
 /*   By: esaleh <esaleh@student.42berlin.de>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/23 00:27:35 by esaleh            #+#    #+#             */
-/*   Updated: 2025/05/28 14:29:49 by esaleh           ###   ########.fr       */
+/*   Updated: 2025/05/28 14:32:49 by esaleh           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ char	*ft_strchr(const char *s, int c)
 			return ((char *)s);
 		s++;
 	}
-	if (*s == '\0' && c == '\0')
+	if (*s == '\0' && (char)c == '\0')
 		return ((char *)s);
 	return (NULL);
 }
