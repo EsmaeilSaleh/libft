@@ -6,10 +6,31 @@
 /*   By: esaleh <esaleh@student.42berlin.de>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/23 09:20:48 by esaleh            #+#    #+#             */
-/*   Updated: 2025/05/23 09:35:55 by esaleh           ###   ########.fr       */
+/*   Updated: 2025/05/28 15:13:41 by esaleh           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <stddef.h>
+
+void	*ft_memcpy(void *dest, const void *src, size_t n)
+{
+	size_t			i;
+	unsigned char	*d;
+	const unsigned char	*s;
+
+	d = (unsigned char *)dest;
+	s = (const unsigned char *)src;
+	i = 0;
+	while (i < n)
+	{
+		d[i] = s[i];
+		i++;
+	}
+	return (dest);
+}
+
+
+/*
 #include <stdio.h>
 
 void	*ft_memcpy(void *dest, void *src, size_t n)
@@ -26,3 +47,4 @@ void	*ft_memcpy(void *dest, void *src, size_t n)
 	}
 	return (dest - n);
 }
+*/
