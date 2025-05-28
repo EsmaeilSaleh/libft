@@ -6,9 +6,11 @@
 /*   By: esaleh <esaleh@student.42berlin.de>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/23 00:48:45 by esaleh            #+#    #+#             */
-/*   Updated: 2025/05/28 15:10:52 by esaleh           ###   ########.fr       */
+/*   Updated: 2025/05/28 15:11:31 by esaleh           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include <stddef.h>
 
 char	*ft_strrchr(const char *s, int c)
 {
