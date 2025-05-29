@@ -6,7 +6,7 @@
 /*   By: esaleh <esaleh@student.42berlin.de>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/29 12:39:44 by esaleh            #+#    #+#             */
-/*   Updated: 2025/05/29 12:53:49 by esaleh           ###   ########.fr       */
+/*   Updated: 2025/05/29 12:54:18 by esaleh           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ int	ft_strlcpy(char *dst, const char *src, size_t size)
 {
 	unsigned int	i;
 	unsigned int	j;
-	
+
 	i = 0;
 	while (*src)
 		i++;
