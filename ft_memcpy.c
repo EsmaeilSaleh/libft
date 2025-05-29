@@ -6,7 +6,7 @@
 /*   By: esaleh <esaleh@student.42berlin.de>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/23 09:20:48 by esaleh            #+#    #+#             */
-/*   Updated: 2025/05/28 15:16:38 by esaleh           ###   ########.fr       */
+/*   Updated: 2025/05/29 11:59:10 by esaleh           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,7 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	return (dest);
 }
 /*
+
 #include <stdio.h>
 
 void	*ft_memcpy(void *dest, void *src, size_t n)
