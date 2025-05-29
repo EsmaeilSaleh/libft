@@ -6,7 +6,7 @@
 /*   By: esaleh <esaleh@student.42berlin.de>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/23 09:36:19 by esaleh            #+#    #+#             */
-/*   Updated: 2025/05/29 10:29:56 by esaleh           ###   ########.fr       */
+/*   Updated: 2025/05/29 10:30:37 by esaleh           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,6 +41,7 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	return ((void *)orig_dest);
 }
 /*
+
 #include <stdio.h>
 
 void	*ft_memmove(void *dest, void *src, size_t n)
