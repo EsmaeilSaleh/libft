@@ -6,7 +6,7 @@
 /*   By: esaleh <esaleh@student.42berlin.de>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/23 09:36:19 by esaleh            #+#    #+#             */
-/*   Updated: 2025/05/29 10:29:49 by esaleh           ###   ########.fr       */
+/*   Updated: 2025/05/29 10:29:56 by esaleh           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,6 +47,7 @@ void	*ft_memmove(void *dest, void *src, size_t n)
 {
 	size_t	i;
 	size_t	arr[50];
+
 	i = 0;
 	while (i < n)
 	{
