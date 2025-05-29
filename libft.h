@@ -6,7 +6,7 @@
 /*   By: esaleh <esaleh@student.42berlin.de>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/22 11:05:13 by esaleh            #+#    #+#             */
-/*   Updated: 2025/05/29 13:22:46 by esaleh           ###   ########.fr       */
+/*   Updated: 2025/05/29 13:23:06 by esaleh           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,6 +34,6 @@ void	*ft_memset(void *s, int c, size_t n);
 void	*ft_memcpy(void *dest, void *src, size_t n);
 void	*ft_memmove(void *dest, void *src, size_t n);
 void	ft_bzero(void *s, size_t n);
-unsigned int	ft_strlcat(char *dst, const char *src, size_t size);
+unsigned int			ft_strlcat(char *dst, const char *src, size_t size);
 
 #endif
