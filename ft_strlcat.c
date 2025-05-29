@@ -6,19 +6,20 @@
 /*   By: esaleh <esaleh@student.42berlin.de>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/29 13:09:06 by esaleh            #+#    #+#             */
-/*   Updated: 2025/05/29 13:11:16 by esaleh           ###   ########.fr       */
+/*   Updated: 2025/05/29 13:13:52 by esaleh           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <string.h>
 
-unsigned int	ft_strlcat(char *dest, char *src, unsigned int size)
+unsigned int	ft_strlcat(char *dst, const char *src, size_t size)
 {
-	unsigned int	i;
-	unsigned int	j;
+	size_t	i;
+	size_t	j;
 
 	i = 0;
 	j = 0;
-	while (dest[i] && i < size)
+	while (dst[i] && i < size)
 		i++;
 	if (i == size)
 	{
@@ -28,10 +29,10 @@ unsigned int	ft_strlcat(char *dest, char *src, unsigned int size)
 	}
 	while (src[j] && i + j + 1 < size)
 	{
-		dest[i + j] = src[j];
+		dst[i + j] = src[j];
 		j++;
 	}
-	dest[i + j] = '\0';
+	dst[i + j] = '\0';
 	while (src[j])
 		j++;
 	return (i + j);
