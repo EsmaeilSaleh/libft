@@ -6,34 +6,38 @@
 /*   By: esaleh <esaleh@student.42berlin.de>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/29 13:09:06 by esaleh            #+#    #+#             */
-/*   Updated: 2025/05/29 15:00:47 by esaleh           ###   ########.fr       */
+/*   Updated: 2025/05/29 15:23:51 by esaleh           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 #include <string.h>
 
 unsigned int	ft_strlcat(char *dst, const char *src, size_t size)
 {
+	size_t	dst_len;
+	size_t	src_len;
 	size_t	i;
-	size_t	j;
+
+	dst_len = 0;
+	while (dst_len < size && dst[dst_len])
+		dst_len++;
+
+	src_len = 0;
+	while (src[src_len])
+		src_len++;
+
+	if (dst_len == size)
+		return (size + src_len);
 
 	i = 0;
-	j = 0;
-	while (dst[i] && i < size)
+	while (src[i] && (dst_len + i + 1) < size)
+	{
+		dst[dst_len + i] = src[i];
 		i++;
-	if (i == size)
-	{
-		while (src[j])
-			j++;
-		return (size + j);
 	}
-	while (src[j] && i + j + 1 < size)
-	{
-		dst[i + j] = src[j];
-		j++;
-	}
-	dst[i + j] = '\0';
-	while (src[j])
-		j++;
-	return (i + j);
+
+	if (dst_len + i < size)
+		dst[dst_len + i] = '\0';
+
+	return (dst_len + src_len);
 }
+
