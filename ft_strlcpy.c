@@ -6,9 +6,11 @@
 /*   By: esaleh <esaleh@student.42berlin.de>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/29 12:39:44 by esaleh            #+#    #+#             */
-/*   Updated: 2025/05/29 12:51:59 by esaleh           ###   ########.fr       */
+/*   Updated: 2025/05/29 12:52:52 by esaleh           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include <string.h>
 
 int	ft_strlcpy(char *dst, const char *str, size_t size)
 {
