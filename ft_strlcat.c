@@ -6,13 +6,13 @@
 /*   By: esaleh <esaleh@student.42berlin.de>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/29 13:09:06 by esaleh            #+#    #+#             */
-/*   Updated: 2025/05/29 13:13:52 by esaleh           ###   ########.fr       */
+/*   Updated: 2025/05/29 13:29:54 by esaleh           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <string.h>
 
-unsigned int	ft_strlcat(char *dst, const char *src, size_t size)
+int	ft_strlcat(char *dst, const char *src, size_t size)
 {
 	size_t	i;
 	size_t	j;
