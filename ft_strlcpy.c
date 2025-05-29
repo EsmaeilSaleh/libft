@@ -6,13 +6,13 @@
 /*   By: esaleh <esaleh@student.42berlin.de>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/29 12:39:44 by esaleh            #+#    #+#             */
-/*   Updated: 2025/05/29 12:58:25 by esaleh           ###   ########.fr       */
+/*   Updated: 2025/05/29 12:59:13 by esaleh           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <string.h>
 
-int	ft_strlcpy(char *dst, const char *src, size_t size)
+unsigned int	ft_strlcpy(char *dst, const char *src, size_t size)
 {
 	unsigned int	i;
 	unsigned int	j;
