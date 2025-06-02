@@ -6,7 +6,7 @@
 /*   By: esaleh <esaleh@student.42berlin.de>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/22 11:05:13 by esaleh            #+#    #+#             */
-/*   Updated: 2025/06/02 15:55:29 by esaleh           ###   ########.fr       */
+/*   Updated: 2025/06/02 15:56:24 by esaleh           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,9 +24,9 @@ typedef struct s_list
 
 typedef struct	s_split_next
 {
-	size_t start;
-	size_t length;
-}				t_split_next;
+	size_t	start;
+	size_t	length;
+}	t_split_next;
 
 int		ft_isalpha(int c);
 int		ft_isdigit(int c);
