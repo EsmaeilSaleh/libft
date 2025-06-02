@@ -6,7 +6,7 @@
 /*   By: esaleh <esaleh@student.42berlin.de>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/22 11:05:13 by esaleh            #+#    #+#             */
-/*   Updated: 2025/06/02 15:12:37 by esaleh           ###   ########.fr       */
+/*   Updated: 2025/06/02 15:39:22 by esaleh           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,6 +55,7 @@ void	ft_putchar_fd(char c, int fd);
 void	ft_putstr_fd(char *s, int fd);
 void	ft_putendl_fd(char *s, int fd);
 void	ft_putnbr_fd(int n, int fd);
+void	ft_lstadd_front(t_list **lst, t_list *new);
 size_t	ft_strlcat(char *dst, const char *src, size_t size);
 t_list	*ft_lstnew(void *content);
 
