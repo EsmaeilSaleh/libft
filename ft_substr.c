@@ -6,12 +6,12 @@
 /*   By: esaleh <esaleh@student.42berlin.de>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/02 14:11:27 by esaleh            #+#    #+#             */
-/*   Updated: 2025/06/02 14:13:39 by esaleh           ###   ########.fr       */
+/*   Updated: 2025/06/02 14:13:49 by esaleh           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
-#include "libft.h"  // Make sure ft_strlen and ft_strlcpy (or ft_memcpy) are declared here
+#include "libft.h"
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
