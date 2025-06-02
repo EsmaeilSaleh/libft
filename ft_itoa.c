@@ -6,7 +6,7 @@
 /*   By: esaleh <esaleh@student.42berlin.de>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/02 14:21:53 by esaleh            #+#    #+#             */
-/*   Updated: 2025/06/02 14:23:32 by esaleh           ###   ########.fr       */
+/*   Updated: 2025/06/02 14:24:00 by esaleh           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,11 @@
 
 static int	count_digits(int n)
 {
-	int		count = 0;
-	long	num = n;
+	int		count;
+	long	num;
 
+	count = 0;
+	num = n;
 	if (num <= 0)
 	{
 		count = 1;
