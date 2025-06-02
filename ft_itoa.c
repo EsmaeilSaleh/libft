@@ -6,7 +6,7 @@
 /*   By: esaleh <esaleh@student.42berlin.de>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/02 14:21:53 by esaleh            #+#    #+#             */
-/*   Updated: 2025/06/02 14:24:31 by esaleh           ###   ########.fr       */
+/*   Updated: 2025/06/02 14:24:48 by esaleh           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,7 @@ char	*ft_itoa(int n)
 	int		len;
 	long	num;
 
-	len  = count_digits(n);
+	len = count_digits(n);
 	num = n;
 	if (n == 0)
 		return (ft_strdup("0"));
