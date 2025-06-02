@@ -6,7 +6,7 @@
 /*   By: esaleh <esaleh@student.42berlin.de>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/02 14:11:27 by esaleh            #+#    #+#             */
-/*   Updated: 2025/06/02 14:13:49 by esaleh           ###   ########.fr       */
+/*   Updated: 2025/06/02 14:14:01 by esaleh           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,6 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	substr_len = str_len - start;
 	if (substr_len > len)
 		substr_len = len;
-
 	substr = (char *)malloc(substr_len + 1);
 	if (!substr)
 		return (NULL);
