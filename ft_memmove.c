@@ -6,40 +6,40 @@
 /*   By: esaleh <esaleh@student.42berlin.de>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/23 09:36:19 by esaleh            #+#    #+#             */
-/*   Updated: 2025/06/02 11:46:48 by esaleh           ###   ########.fr       */
+/*   Updated: 2025/06/02 11:48:16 by esaleh           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include <stddef.h>
 
-void *ft_memmove(void *dest, const void *src, size_t n)
+void	*ft_memmove(void *dest, const void *src, size_t n)
 {
 	unsigned char       *d;
 	const unsigned char *s;
 	size_t              i;
 
 	if (!dest && !src)
-	    return NULL;
+		return NULL;
 
 	d = (unsigned char *)dest;
 	s = (const unsigned char *)src;
 
 	if (d < s)
 	{
-	    i = 0;
-	    while (i < n)
-	    {
-	        d[i] = s[i];
-	        i++;
-	    }
+		i = 0;
+		while (i < n)
+		{
+			d[i] = s[i];
+			i++;
+		}
 	}
 	else
 	{
-	    i = n;
-	    while (i > 0)
-	    {
-	        i--;
-	        d[i] = s[i];
-	    }
+		i = n;
+		while (i > 0)
+		{
+			i--;
+			d[i] = s[i];
+		}
 	}
 
 	return dest;
