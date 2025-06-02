@@ -6,12 +6,12 @@
 /*   By: esaleh <esaleh@student.42berlin.de>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/02 14:36:39 by esaleh            #+#    #+#             */
-/*   Updated: 2025/06/02 14:37:36 by esaleh           ###   ########.fr       */
+/*   Updated: 2025/06/02 14:37:45 by esaleh           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
-#include "libft.h"  // for ft_strlen, ft_strchr, ft_substr
+#include "libft.h"
 
 char	*ft_strtrim(char const *s1, char const *set)
 {
