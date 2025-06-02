@@ -6,7 +6,7 @@
 /*   By: esaleh <esaleh@student.42berlin.de>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/02 14:39:54 by esaleh            #+#    #+#             */
-/*   Updated: 2025/06/02 14:44:06 by esaleh           ###   ########.fr       */
+/*   Updated: 2025/06/02 14:44:37 by esaleh           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,8 @@
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
-	unsigned int	i;
-	char	*new_str;
+	unsigned int		i;
+	char		*new_str;
 	size_t	len;
 
 	if (!s || !f)
