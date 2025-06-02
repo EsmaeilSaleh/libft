@@ -6,7 +6,7 @@
 /*   By: esaleh <esaleh@student.42berlin.de>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/02 14:21:53 by esaleh            #+#    #+#             */
-/*   Updated: 2025/06/02 14:23:21 by esaleh           ###   ########.fr       */
+/*   Updated: 2025/06/02 14:23:32 by esaleh           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,17 +38,14 @@ char	*ft_itoa(int n)
 
 	if (n == 0)
 		return (ft_strdup("0"));
-
 	str = (char *)ft_calloc(len + 1, sizeof(char));
 	if (!str)
 		return (NULL);
-
 	if (num < 0)
 	{
 		str[0] = '-';
 		num = -num;
 	}
-
 	while (num > 0)
 	{
 		str[--len] = (num % 10) + '0';
