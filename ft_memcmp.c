@@ -6,7 +6,7 @@
 /*   By: esaleh <esaleh@student.42berlin.de>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/02 13:19:30 by esaleh            #+#    #+#             */
-/*   Updated: 2025/06/02 13:30:21 by esaleh           ###   ########.fr       */
+/*   Updated: 2025/06/02 13:30:43 by esaleh           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ int	memcmp(const void *s1, const void *s2, size_t n)
 	while (i < n)
 	{
 		if (p1[i] != p2[i])
-			return (p1[i] - p2[i])
+			return (p1[i] - p2[i]);
 		i++;
 	}
 	return (0);
