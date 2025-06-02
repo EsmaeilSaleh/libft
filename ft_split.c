@@ -6,9 +6,10 @@
 /*   By: esaleh <esaleh@student.42berlin.de>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/02 14:29:05 by esaleh            #+#    #+#             */
-/*   Updated: 2025/06/02 14:32:39 by esaleh           ###   ########.fr       */
+/*   Updated: 2025/06/02 14:34:02 by esaleh           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include <stdlib.h>
 #include "libft.h"  // for ft_substr, ft_strlen
 
@@ -53,19 +54,11 @@ static void	free_all(char **arr, size_t n)
 	free(arr);
 }
 
-char	**ft_split(char const *s, char c)
+static int	split_loop(char **result, char const *s, char c, size_t words)
 {
-	char	**result;
-	size_t	words;
 	size_t	i;
 	size_t	len;
 
-	if (!s)
-		return (NULL);
-	words = count_words(s, c);
-	result = (char **)malloc(sizeof(char *) * (words + 1));
-	if (!result)
-		return (NULL);
 	i = 0;
 	while (i < words)
 	{
@@ -76,11 +69,27 @@ char	**ft_split(char const *s, char c)
 		if (!result[i])
 		{
 			free_all(result, i);
-			return (NULL);
+			return (0);
 		}
 		s += len;
 		i++;
 	}
 	result[i] = NULL;
+	return (1);
+}
+
+char	**ft_split(char const *s, char c)
+{
+	char	**result;
+	size_t	words;
+
+	if (!s)
+		return (NULL);
+	words = count_words(s, c);
+	result = (char **)malloc(sizeof(char *) * (words + 1));
+	if (!result)
+		return (NULL);
+	if (!split_loop(result, s, c, words))
+		return (NULL);
 	return (result);
 }
