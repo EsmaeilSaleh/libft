@@ -6,7 +6,7 @@
 /*   By: esaleh <esaleh@student.42berlin.de>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/29 13:09:06 by esaleh            #+#    #+#             */
-/*   Updated: 2025/06/02 12:21:28 by esaleh           ###   ########.fr       */
+/*   Updated: 2025/06/02 12:25:44 by esaleh           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include <string.h>
@@ -40,7 +40,8 @@ unsigned int	ft_strlcat(char *dst, const char *src, size_t size)
 int	main(void)
 {
 	char str[] = "Hello ",
-	ft_strlcat(str, "How are you?", 7);
+	char str1[] = "How are you? ",
+	ft_strlcat(str,str1, 7);
 	printf("%s\n", str);
 	return (0);
 }
