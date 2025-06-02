@@ -1,20 +1,17 @@
-NAME    := libft.a
-CC      := gcc
-CFLAGS  := -Wall -Wextra -Werror -I.
+NAME := libft.a
+CC := gcc
+CFLAGS := -Wall -Wextra -Werror -Iincludes
 
-SRCS    := ft_atoi.c ft_bzero.c ft_isalnum.c ft_isalpha.c ft_isascii.c ft_isdigit.c ft_isprint.c ft_memchr.c ft_memcpy.c ft_memmove.c ft_memset.c ft_strchr.c ft_strlcpy.c ft_strlen.c ft_strnstr.c ft_strrchr.c ft_tolower.c ft_toupper.c 
-OBJS    := $(SRCS:.c=.o)
+SRCS := Part_1/ft_atoi.c Part_1/ft_bzero.c Part_1/ft_isalnum.c Part_1/ft_isalpha.c Part_1/ft_isascii.c Part_1/ft_isdigit.c Part_1/ft_isprint.c Part_1/ft_memchr.c Part_1/ft_memcpy.c Part_1/ft_memmove.c Part_1/ft_memset.c Part_1/ft_strchr.c Part_1/ft_strlcpy.c Part_1/ft_strlen.c Part_1/ft_strnstr.c Part_1/ft_strrchr.c Part_1/ft_tolower.c Part_1/ft_toupper.c Part_1/ft_strlcat.c
 
-# ------------------------------------------------------------------------------
-# Rules
-# ------------------------------------------------------------------------------
+OBJS := $(SRCS:Part_1/%.c=%.o)
 
 all: $(NAME)
 
 $(NAME): $(OBJS)
 	ar rcs $(NAME) $(OBJS)
 
-%.o: %.c
+%.o: Part_1/%.c
 	$(CC) $(CFLAGS) -c $< -o $@
 
 clean:
@@ -26,3 +23,4 @@ fclean: clean
 re: fclean all
 
 .PHONY: all clean fclean re
+
