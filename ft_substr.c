@@ -6,7 +6,7 @@
 /*   By: esaleh <esaleh@student.42berlin.de>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/02 14:11:27 by esaleh            #+#    #+#             */
-/*   Updated: 2025/06/02 14:13:07 by esaleh           ###   ########.fr       */
+/*   Updated: 2025/06/02 14:13:39 by esaleh           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,14 +21,9 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 
 	if (!s)
 		return (NULL);
-
 	str_len = ft_strlen(s);
-
-	// If start is past end of string, return empty string
 	if (start >= str_len)
 		return (ft_strdup(""));
-
-	// Calculate the actual substring length (can’t go past end of s)
 	substr_len = str_len - start;
 	if (substr_len > len)
 		substr_len = len;
@@ -36,10 +31,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	substr = (char *)malloc(substr_len + 1);
 	if (!substr)
 		return (NULL);
-
-	// Copy substring + null terminator
 	ft_memcpy(substr, s + start, substr_len);
 	substr[substr_len] = '\0';
-
 	return (substr);
 }
