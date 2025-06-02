@@ -6,7 +6,7 @@
 /*   By: esaleh <esaleh@student.42berlin.de>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/23 09:36:19 by esaleh            #+#    #+#             */
-/*   Updated: 2025/06/02 11:53:27 by esaleh           ###   ########.fr       */
+/*   Updated: 2025/06/02 11:54:01 by esaleh           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include <stddef.h>
@@ -39,7 +39,7 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 			d[i] = s[i];
 		}
 	}
-	return dest;
+	return (dest);
 }
 /*
 #include <stdio.h>
