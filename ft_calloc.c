@@ -6,7 +6,7 @@
 /*   By: esaleh <esaleh@student.42berlin.de>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/02 13:56:51 by esaleh            #+#    #+#             */
-/*   Updated: 2025/06/02 13:57:41 by esaleh           ###   ########.fr       */
+/*   Updated: 2025/06/02 14:04:19 by esaleh           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,12 +23,9 @@ void	*ft_calloc(size_t count, size_t size)
 	total = count * size;
 	if (count != 0 && total / count != size)
 		return (NULL);
-
 	ptr = malloc(total);
 	if (!ptr)
 		return (NULL);
-
 	ft_bzero(ptr, total);
 	return (ptr);
 }
-
