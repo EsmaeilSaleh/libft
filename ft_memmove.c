@@ -6,16 +6,16 @@
 /*   By: esaleh <esaleh@student.42berlin.de>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/23 09:36:19 by esaleh            #+#    #+#             */
-/*   Updated: 2025/06/02 11:48:16 by esaleh           ###   ########.fr       */
+/*   Updated: 2025/06/02 11:49:28 by esaleh           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include <stddef.h>
 
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {
-	unsigned char       *d;
-	const unsigned char *s;
-	size_t              i;
+	unsigned char	*d;
+	const unsigned char	*s;
+	size_t	i;
 
 	if (!dest && !src)
 		return NULL;
