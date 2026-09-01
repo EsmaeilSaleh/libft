@@ -153,4 +153,4 @@ Operates on `t_list` nodes (`void *content` + `struct s_list *next`).
 
 ### AI usage
 
-AI was not used for any of the function implementations, the header, or the Makefile — those were written independently from the function specifications and standard library behavior. AI (Claude) was used only to review and tighten the wording and structure of this README.
+AI was not used for any of the function implementations, the header, or the Makefile — those were written independently from the function specifications and standard library behavior. It was used only to review and tighten the wording and structure of this README.
